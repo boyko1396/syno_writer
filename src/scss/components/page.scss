@@ -1,0 +1,358 @@
+.page {
+  padding: 50rem 0 70rem;
+  @media (max-width: $lg) {
+    padding-top: 55rem;
+  }
+  &__container {
+  }
+  &__header {
+    margin: 0 0 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $lg) {
+      margin-bottom: 15rem;
+    }
+    &-title {
+      margin: 0;
+      flex-shrink: 0;
+      @media (max-width: $md) {
+        font-weight: bold;
+      }
+    }
+    &-roter {
+    }
+  }
+  &__title {
+    margin: 0 0 40rem;
+    font-weight: 600;
+    @media (max-width: $lg) {
+      margin-bottom: 15rem;
+    }
+    @media (max-width: $md) {
+      font-weight: bold;
+    }
+  }
+  &__table {
+    background: rgba($whiteColor, .5);
+    margin: -30rem var(--gap-container-) 0;
+    box-shadow: 0px 187px 112px rgba($accentColor, .01), 0px 83px 83px rgba($accentColor, .02), 0px 21px 46px rgba($accentColor, .02);
+    border-radius: $radiusSemi;
+    @media (max-width: $lg) {
+      margin-top: 0;
+    }
+  }
+  &__table-pagination {
+    margin-top: 35rem;
+  }
+  &__registration {
+    padding-bottom: 60rem;
+    @media (max-width: $md) {
+      padding-top: 5rem;
+      padding-bottom: 0;
+    }
+    @media (max-width: $sm) {
+      margin-right: var(--gap-container-);
+      margin-left: var(--gap-container-);
+    }
+    &-form {
+      margin-top: -10rem;
+      margin-bottom: 40rem;
+      @media (max-width: $lg) {
+        margin-top: 0;
+      }
+      @media (max-width: $md) {
+        margin-bottom: 20rem;
+      }
+    }
+    &-router {
+    }
+  }
+  &__profile {
+    padding-bottom: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $md) {
+      padding-bottom: 10rem;
+    }
+    &-col {
+      margin-right: 130rem;
+      @media (max-width: $sm) {
+        max-width: 100%;
+        margin-right: 0;
+        flex: 0 0 100%;
+      }
+      &:not(:last-child) {
+        @media (max-width: $sm) {
+          margin-bottom: 30rem;
+        }
+      }
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      margin: 0 0 40rem;
+      @media (max-width: $md) {
+        margin-bottom: 20rem;
+      }
+    }
+    &-list {
+      margin: 0 0 35rem;
+      padding: 0;
+      list-style-type: none;
+      &-card {
+        margin: 0 0 0 -40rem;
+        padding: 0;
+        @media (max-width: $lg) {
+          margin-left: 0;
+        }
+        &:not(:last-child) {
+          margin-bottom: 26rem;
+          @media (max-width: $md) {
+            margin-bottom: 10rem;
+          }
+        }
+      }
+    }
+    &-btn {
+      min-width: 228rem;
+      @media (max-width: $md) {
+        min-height: 56rem;
+        font-size: 12rem;
+      }
+      @media (max-width: $xs) {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+    &-btn-unsubscribe {
+      @extend %area-click, %btn-reset;
+      min-width: 228rem;
+      padding: 15rem 0;
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      font-size: var(--fs-9);
+      color: $accentColor;
+      text-align: center;
+      cursor: pointer;
+      vertical-align: top;
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          opacity: .6;
+        }
+      }
+      @media (max-width: $xs) {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+  &__contacts {
+    padding-bottom: 60rem;
+    > :last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: $md) {
+      padding-bottom: 20rem;
+    }
+    &-text {
+      margin: 0 0 50rem;
+      font-size: var(--fs-4);
+      @media (max-width: $md) {
+        margin-bottom: 30rem;
+      }
+    }
+    &-form {
+      @media (max-width: $sm) {
+        margin-right: var(--gap-container-);
+        margin-left: var(--gap-container-);
+      }
+      &-title {
+        font-weight: 600;
+        margin: 0 0 50rem;
+        @media (max-width: $md) {
+          margin-bottom: 40rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__sw-pro {
+    font-size: var(--fs-4);
+    &-appeal {
+      margin: 0 0 50rem;
+      @media (max-width: $md) {
+        margin-bottom: 30rem;
+      }
+      p {
+        margin-bottom: .5em;
+      }
+    }
+    &-benefits {
+      margin: 0 0 60rem;
+      padding: 0;
+      font-weight: 500;
+      font-size: var(--fs-4);
+      list-style-type: none;
+      @media (max-width: $md) {
+        margin-bottom: 40rem;
+      }
+      &-item {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        @media (max-width: $lg) {
+          margin-left: 40rem;
+          @media (max-width: $md) {
+            margin-left: 34rem;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 25rem;
+        }
+        .u-icon {
+          width: 24rem;
+          height: 24rem;
+          margin-right: 16rem;
+          color: $accentColor;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          @media (max-width: $md) {
+            width: 18rem;
+            height: 18rem;
+          }
+        }
+        &-text {
+          margin: 0;
+          font-weight: inherit;
+        }
+      }
+    }
+    &-access {
+      margin: 0 0 70rem;
+      @media (max-width: $md) {
+        margin-bottom: 50rem;
+      }
+      &-title {
+        margin: 0 0 20rem;
+        font-weight: 600;
+        @media (max-width: $md) {
+          font-weight: bold;
+          font-size: var(--fs-2);
+        }
+      }
+      &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $md) {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+      &-text {
+        @media (max-width: $md) {
+          max-width: 100%;
+          margin-bottom: 25rem;
+          flex: 0 0 100%;
+        }
+      }
+      &-btn {
+        flex-shrink: 0;
+        @media (max-width: $md) {
+          min-height: 56rem;
+          font-size: 12rem;
+        }
+        @media (max-width: $xs) {
+          width: 100%;
+        }
+      }
+    }
+    &-example-suptitle {
+      margin: 0 0 40rem;
+      font-weight: 600;
+      @media (max-width: $md) {
+        font-weight: bold;
+        font-size: var(--fs-2);
+      }
+    }
+    &-card {
+      background: $greyColor;
+      margin: 0 var(--gap-container-);
+      padding: var(--gap-container-md) var(--gap-container) 70rem;
+      border-radius: $radiusSemi;
+      box-shadow: 0 187px 112px rgba($accentColor, .01), 0 83px 83px rgba($accentColor, .02), 0 21px 46px rgba($accentColor, .02);
+      @media (max-width: $lg) {
+        margin-right: -32rem;
+        margin-left: -32rem;
+        padding: 25rem 32rem 20rem;
+      }
+      @media (max-width: $md) {
+        margin-right: -26rem;
+        margin-left: -26rem;
+        padding-right: 26rem;
+        padding-left: 26rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 30rem;
+      }
+      &-list {
+      }
+      &-simple {
+        margin: 0 0 40rem;
+        font-weight: 300;
+        strong {
+          font-weight: normal;
+        }
+        h4:not(:first-child) {
+          margin-top: 2em;
+        }
+      }
+      &-premium {
+        background: $purpleLightColor;
+        margin: 0 -43rem;
+        padding: 35rem 43rem;
+        font-weight: 300;
+        border-radius: $radiusMd;
+        @media (max-width: $lg) {
+          margin-right: -20rem;
+          margin-left: -20rem;
+          padding: 20rem;
+        }
+        h4:first-child {
+          @extend .text-gradient, .text-gradient--accent;
+          display: inline-flex;
+          vertical-align: top;
+        }
+        strong {
+          font-weight: normal;
+        }
+      }
+    }
+    &-footer {
+      margin: 120rem 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $md) {
+        margin: 50rem 0;
+      }
+      &-btn {
+        @media (max-width: $md) {
+          min-height: 56rem;
+          font-size: 12rem;
+        }
+        @media (max-width: $xs) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

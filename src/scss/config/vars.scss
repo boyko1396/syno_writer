@@ -1,0 +1,115 @@
+$siteResolution: 1px;
+$mainFont: 'Manrope';
+$mainWeight: 400;
+$lineHeight1: 1.7;
+$lineHeight2: 1.35;
+$lineHeight3: 1.3;
+$lineHeight4: 1.2;
+$lineHeight5: 1.25;
+$lineHeight6: 1;
+$lineHeightDefault: $lineHeight2;
+
+$containerWidthMd: 1200rem;
+
+$gap: 15rem;
+$gapFluid: 30rem;
+
+$radiusSm: 10rem;
+$radiusMd: 20rem;
+$radiusSemi: 25rem;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+$blackLightColor: rgba(#000000, .4);
+$greyColor: #FAFAFA;
+$redColor: #CE0000;
+$purpleColor: #4A00E0;
+$purpleLightColor: #F4F0FF;
+$purpleMediumColor: #7E2DE2;
+$bluePurpleColor: #8E2DE2;
+$blueColor: #4F92BF;
+$accentColor: $purpleColor;
+
+$bgSite: $whiteColor;
+
+$gradientAccent1: linear-gradient(92.11deg, $purpleColor -27.53%, $bluePurpleColor 135.92%);
+
+$boxShadow1: 0 10rem 20rem rgba($blackColor, .05);
+$boxShadow2: 0 2rem 20rem rgba($whiteColor, .15);
+
+$bgBlur1: blur(20px);
+$bgBlur2: blur(25px);
+
+$fontFamily: $mainFont, Open Sans, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 18rem;
+  --fs-1: 46rem;
+  --fs-2: 40rem;
+  --fs-3: 25rem;
+  --fs-4: 20rem;
+  --fs-5: 18rem;
+  --fs-6: 16rem;
+  --fs-7: 15rem;
+  --fs-8: 14rem;
+  --fs-9: 12rem;
+  --fs-10: 10rem;
+
+  --gap: 15rem;
+  --gap-: -15rem;
+  --gap-fluid: 30rem;
+  --gap-fluid-: -30rem;
+  --gap-site: 16rem;
+  --gap-site-: -16rem;
+  --gap-container: 78rem;
+  --gap-container-: -78rem;
+  --gap-container-sm: 28rem;
+  --gap-container-sm-: -28rem;
+  --gap-container-md: 50rem;
+  --gap-container-md-: -50rem;
+  --gap-container-y: 60rem;
+  --gap-container-y-: -60rem;
+
+  --site-width: 1232rem;
+
+  --scroll-offset: 0rem;
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+    --gap-container: 32rem;
+    --gap-container-: -32rem;
+  }
+  @media (max-width: $md) {
+    --fs-default: 12rem;
+    --fs-1: 30rem;
+    --fs-2: 20rem;
+    --fs-3: 15rem;
+    --fs-4: 15rem;
+    --fs-5: 12rem;
+
+    --gap-container: 20rem;
+    --gap-container-: -20rem;
+
+    --gap-container-y: 35rem;
+    --gap-container-y-: -35rem;
+  }
+}

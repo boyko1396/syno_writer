@@ -1,0 +1,26 @@
+.faq {
+  padding: var(--gap-container-y) 0 calc(2 * var(--gap-container-y));
+  &__container {
+  }
+  &__title {
+    margin: 0 var(--gap-container) 50rem;
+    @media (max-width: $md) {
+      margin-bottom: 30rem;
+    }
+  }
+  &__list {
+    padding: 0 var(--gap-container-sm);
+    @media (max-width: $md) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: 20rem;
+        @media (max-width: $md) {
+          margin-bottom: 15rem;
+        }
+      }
+    }
+  }
+}

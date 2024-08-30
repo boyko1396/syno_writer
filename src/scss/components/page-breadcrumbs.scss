@@ -1,0 +1,10 @@
+.page-breadcrumbs {
+  padding: 40rem 0;
+  @media (max-width: $lg) {
+    padding: 25rem 0;
+  }
+  &__container {
+  }
+  &__list {
+  }
+}

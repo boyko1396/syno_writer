@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="css/style.min.css??=v=20240830160438">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#4a00e0">
+  <link rel="shortcut icon" href="static/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#4a00e0">
+  <title>SynoWriter</title>
+</head>
+<body class="u-scrollbar">
+
+  <div id="root" class="site">
+    <div class="site__inner">
+
+      <header class="header site__header">
+        <div class="container container--size-sm header__container">
+          <a href="/" class="logo logo--size-sm header__logo">
+            <picture class="logo__img">
+              <img src="images/logo-accent-gradient.svg" alt="SynoWriter"></picture>
+          </a>
+          <div class="header__dropdown">
+            <div class="d-lg-block header__dropdown-top">
+              <a href="/" class="logo logo--size-sm header__dropdown-logo">
+                <picture class="logo__img">
+                  <img src="images/logo-accent-gradient.svg" width="143" height="34" alt="Boom AI"></picture>
+              </a>
+              <button type="button" class="header__dropdown-toggle js-header-toggle header__dropdown-toggle--close">
+                <svg class="u-icon">
+                  <use xlink:href="images/icons/icons.svg#menu-close"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="header__nav" role="navigation">
+              <ul class="header__nav-list">
+                <li class="header__nav-item d-lg-block">
+                  <p class="header__nav-title">Навигация</p>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#features" class="header__nav-link js-anchor">Возможности</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#tariffs" class="header__nav-link js-anchor">Тарифы</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#faq" class="header__nav-link js-anchor">FAQ</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="contacts.html" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="d-lg-block header__nav-list">
+                <li class="header__nav-item">
+                  <p class="header__nav-title">Правила</p>
+                </li>
+                <li class="header__nav-item">
+                  <a href="privacy.html" class="header__nav-link js-anchor">Политика конфиденциальности</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="terms.html" class="header__nav-link js-anchor">Условия использования</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="offer.html" class="header__nav-link js-anchor">Договор оферты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="btn-group header__btn-group">
+              <div class="btn-group__inner">
+                <div class="btn-group__col">
+                  <a href="login.html" class="btn btn--size-md btn-group__item btn--theme-accent-light">
+                    <span class="btn__inner">
+                      <span class="btn__title">Войти</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="btn-group__col">
+                  <a href="registration.html" class="btn btn--size-md btn-group__item btn--theme-accent-gradient">
+                    <span class="btn__inner">
+                      <span class="btn__title">Зарегистрироваться</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="d-lg-block header__dropdown-toggle header__dropdown-toggle--open js-header-toggle">
+            <svg class="u-icon">
+              <use xlink:href="images/icons/icons.svg#menu-open"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="d-lg-block header__overlay js-header-toggle-close"></div>
+      </header>
+
+      <main role="main" class="site__main">
+
+        <section class="intro">
+          <div class="container container--size-sm intro__container">
+            <div class="intro__inner">
+              <div class="intro__content">
+                <h1 class="intro__title">
+                  Генерируйте <strong>текст&nbsp;
+                    <span class="text-gradient text-gradient--accent">онлайн</span></strong> 
+                </h1>
+                <ul class="intro__benefits">
+                  <li class="intro__benefits-item">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#check"></use>
+                    </svg>
+                    <div class="intro__benefits-item-text">
+                      Интуитивно <strong><span class="color-accent">понятный</span></strong> 
+                      интерфейс
+                    </div>
+                  </li>
+                  <li class="intro__benefits-item">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#license"></use>
+                    </svg>
+                    <div class="intro__benefits-item-text">
+                      Высокое
+                      <strong>
+                        <span class="color-accent">качество</span>
+                      </strong>
+                      текста
+                    </div>
+                  </li>
+                  <li class="intro__benefits-item">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#acute"></use>
+                    </svg>
+                    <div class="intro__benefits-item-text">
+                      <strong>
+                        <span class="color-accent">Скорость</span>
+                      </strong>
+                      работы
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <picture class="intro__hero">
+                <source srcset="images/intro-hero-991.webp" type="image/webp" media="(max-width: 991px)">
+                <source srcset="images/intro-hero-991.png" media="(max-width: 991px)">
+                <source srcset="images/intro-hero.webp" type="image/webp">
+                <img src="images/intro-hero.png" alt="SynoWriter Генерируйте текст онлайн" width="1440" height="2015"></picture>
+              <div class="intro__appeal">
+                <h2 class="fs-4 intro__appeal-title">
+                  Нейросеть пишет
+                  <span class="text-gradient text-gradient--accent">за вас!</span>
+                </h2>
+                <div class="u-content intro__appeal-text">
+                  <p>
+                    Просто задайте тему или ключевые слова, и SynoWriter создаст уникальный текст по&nbsp;вашему запросу
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="synowriter-ai" class="synowriter-ai">
+          <div class="synowriter-ai__container">
+            <div class="synowriter-ai__body">
+              <header class="synowriter-ai__header">
+                <div class="synowriter-ai__header-type">
+                  <p class="d-md-none synowriter-ai__header-type-title">Режим работы:</p>
+                  <div class="js-dropdown u-dropdown synowriter-ai__header-type-dropdown u-dropdown--theme-accent">
+                    <button type="button" class="js-dropdown-toggle u-dropdown__btn">
+                      <span class="u-dropdown__btn-title"></span>
+                      <svg class="u-icon u-dropdown__btn-icon">
+                        <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                      </svg>
+                    </button>
+                    <div class="u-dropdown__dropdown">
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn is-choose">Генератор текста</button>
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Рерайт текста</button>
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Синонимайзер</button>
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Сочинение</button>
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Чат с нейросетью</button>
+                      <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Дополнить текст</button>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn--theme-accent-outline btn--size-semi synowriter-ai__header-history-btn">
+                  <span class="btn__inner">
+                    <span class="btn__title d-md-none">Показать историю</span>
+                    <span class="btn__title d-md-block">История</span>
+                  </span>
+                </button>
+              </header>
+              <div class="synowriter-ai__appeal">
+                <picture class="synowriter-ai__appeal-picture">
+                  <source srcset="images/synowriter-ai-img.webp" type="image/webp">
+                  <img src="images/synowriter-ai-img.png" alt="Какой текст сгенерировать?" width="623" height="568"></picture>
+                <p class="synowriter-ai__appeal-text">Какой текст сгенерировать?</p>
+              </div>
+              <div class="synowriter-ai__action-wrapper">
+                <div class="synowriter-ai__action">
+                  <button type="button" class="action-btn action-btn--size-sm action-btn--theme-accent-black synowriter-ai__action-btn">
+                    <span class="action-btn__inner">
+                      <svg class="u-icon action-btn__icon">
+                        <use xlink:href="images/icons/icons.svg#copy"></use>
+                      </svg>
+                      <span class="action-btn__title">Копировать</span>
+                    </span>
+                  </button>
+                  <button type="button" class="action-btn action-btn--size-sm action-btn--theme-accent-black synowriter-ai__action-btn">
+                    <span class="action-btn__inner">
+                      <svg class="u-icon action-btn__icon">
+                        <use xlink:href="images/icons/icons.svg#refresh"></use>
+                      </svg>
+                      <span class="action-btn__title">Переписать</span>
+                    </span>
+                  </button>
+                  <button type="button" class="action-btn action-btn--size-sm action-btn--theme-accent-black synowriter-ai__action-btn">
+                    <span class="action-btn__inner">
+                      <svg class="u-icon action-btn__icon">
+                        <use xlink:href="images/icons/icons.svg#plus-type-1"></use>
+                      </svg>
+                      <span class="action-btn__title">Дополнить</span>
+                    </span>
+                  </button>
+                </div>
+                <p class="synowriter-ai__requests">Ваши запросы: 5/5</p>
+              </div>
+            </div>
+            <form action="#" class="synowriter-ai__form">
+              <label class="synowriter-ai__form-label">
+                <textarea name="message" cols="" rows="" class="synowriter-ai__form-textarea" placeholder="Опишите желаемый текст"></textarea>
+                <svg class="u-icon synowriter-ai__form-icon">
+                  <use xlink:href="images/icons/icons.svg#pencil"></use>
+                </svg>
+                <button type="button" class="synowriter-ai__form-btn" disabled="disabled">
+                  <svg class="u-icon">
+                    <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
+          </div>
+        </section>
+
+        <section id="features" class="features">
+          <div class="features__container">
+            <header class="features__header">
+              <h2 class="features__title">Что может нейросеть?</h2>
+              <div class="d-lg-none features__slider-control slider-control">
+                <div class="slider-control__inner">
+                  <button type="button" class="slider-control__btn swiper-button swiper-button--theme-grey js-swiper-button-prev-1 swiper-button-prev">
+                    prev
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                    </svg>
+                  </button>
+                  <button type="button" class="slider-control__btn swiper-button swiper-button--theme-grey js-swiper-button-next-1 swiper-button-next">
+                    next
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </header>
+            <div class="swiper features__slider d-lg-none js-features-slider-desktop-init">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#draw"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Генерация текста</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Создавайте уникальные тексты с нуля, просто задав тему или ключевые слова. SynoWriter поможет вам с написанием статей, эссе, рассказов и других типов текстов.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-1.webp" type="image/webp">
+                          <img src="images/features-card-1.png" alt="Генерация текста" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#edit-document"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Рерайтинг</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Преобразуйте уже существующий текст в совершенно новый, сохранив при этом его смысл и структуру. SynoWriter обеспечит качественный рерайт без плагиата.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-2-2.webp" type="image/webp">
+                          <img src="images/features-card-2-2.png" alt="Рерайтинг" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#grading"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Синонимайзер</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Обогащайте свои тексты синонимами для улучшения их читаемости и стиля. SynoWriter заменит слова и фразы на подходящие синонимы, не нарушая оригинального контекста.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-3.webp" type="image/webp">
+                          <img src="images/features-card-3.png" alt="Синонимайзер" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#article"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Сочинение</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Создавайте креативные тексты, включая рассказы, стихи и сценарии. SynoWriter поможет вам воплотить любые литературные замыслы&nbsp;в&nbsp;жизнь.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-4.webp" type="image/webp">
+                          <img src="images/features-card-4.png" alt="Сочинение" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#chat-bubble"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Чат с нейросетью</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Общайтесь с SynoWriter в реальном времени для получения помощи с текстом, советов по улучшению стиля и многого другого.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-5.webp" type="image/webp">
+                          <img src="images/features-card-5.png" alt="Чат с нейросетью" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#add-notes"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Дополнение текста</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Начните текст, а SynoWriter поможет вам его продолжить, поддерживая ваш стиль и тон.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-6.webp" type="image/webp">
+                          <img src="images/features-card-6.png" alt="Дополнение текста" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-lg-block features__slider js-features-slider-mobile-init swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#draw"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Генерация текста</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Создавайте уникальные тексты с нуля, просто задав тему или ключевые слова. SynoWriter поможет вам с написанием статей, эссе, рассказов и других типов текстов.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-1-1199.webp" type="image/webp" media="(max-width: 1199px)">
+                          <source srcset="images/features-card-1-1199.png" media="(max-width: 1199px)">
+                          <source srcset="images/features-card-1.webp" type="image/webp">
+                          <img src="images/features-card-1.png" alt="Генерация текста" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#edit-document"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Рерайтинг</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Преобразуйте уже существующий текст в совершенно новый, сохранив при этом его смысл и структуру. SynoWriter обеспечит качественный рерайт без плагиата.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-2-2.webp" type="image/webp">
+                          <img src="images/features-card-2-2.png" alt="Рерайтинг" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#grading"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Синонимайзер</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Обогащайте свои тексты синонимами для улучшения их читаемости и стиля. SynoWriter заменит слова и фразы на подходящие синонимы, не нарушая оригинального контекста.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-3.webp" type="image/webp">
+                          <img src="images/features-card-3.png" alt="Синонимайзер" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#article"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Сочинение</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Создавайте креативные тексты, включая рассказы, стихи и сценарии. SynoWriter поможет вам воплотить любые литературные замыслы&nbsp;в&nbsp;жизнь.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-4.webp" type="image/webp">
+                          <img src="images/features-card-4.png" alt="Сочинение" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#chat-bubble"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Чат с нейросетью</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Общайтесь с SynoWriter в реальном времени для получения помощи с текстом, советов по улучшению стиля и многого другого.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-5.webp" type="image/webp">
+                          <img src="images/features-card-5.png" alt="Чат с нейросетью" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide features__slider-slide">
+                  <div class="features-card features__slider-card">
+                    <div class="features-card__inner">
+                      <div class="features-card__content">
+                        <div class="features-card__title">
+                          <svg class="u-icon features-card__title-icon">
+                            <use xlink:href="images/icons/icons.svg#add-notes"></use>
+                          </svg>
+                          <h3 class="fs-4 features-card__title-text">Дополнение текста</h3>
+                        </div>
+                        <div class="u-content features-card__text">
+                          <p>
+                            Начните текст, а SynoWriter поможет вам его продолжить, поддерживая ваш стиль и тон.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="features-card__media">
+                        <picture class="features-card__picture">
+                          <source srcset="images/features-card-6.webp" type="image/webp">
+                          <img src="images/features-card-6.png" alt="Дополнение текста" width="1200" height="826"></picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination js-swiper-pagination-features"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="tariffs" class="tariffs">
+          <div class="tariffs__container">
+            <header class="tariffs__header">
+              <h2 class="tariffs__title">Тарифы</h2>
+              <div class="js-dropdown u-dropdown tariffs__header-dropdown u-dropdown--theme-black">
+                <button type="button" class="js-dropdown-toggle u-dropdown__btn">
+                  <span class="u-dropdown__btn-title"></span>
+                  <svg class="u-icon u-dropdown__btn-icon">
+                    <use xlink:href="images/icons/icons.svg#arrow-type-1"></use>
+                  </svg>
+                </button>
+                <div class="u-dropdown__dropdown">
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn is-choose">Ежемесячно</button>
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Ежемесячно 1</button>
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Ежемесячно 2</button>
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Ежемесячно 3</button>
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Ежемесячно 4</button>
+                  <button type="button" class="js-dropdown-choose u-dropdown__dropdown-btn">Ежемесячно 5</button>
+                </div>
+              </div>
+            </header>
+            <div class="swiper js-tariffs-slider-mobile-init tariffs__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide tariffs__slider-slide">
+                  <div class="tariffs-card tariffs__slider-card">
+                    <div class="tariffs-card__media">
+                      <picture class="tariffs-card__picture">
+                        <source srcset="images/tariffs-card-1.webp" type="image/webp">
+                        <img src="images/tariffs-card-1.png" alt="Базовый" width="626" height="492"></picture>
+                    </div>
+                    <div class="tariffs-card__inner">
+                      <div class="tariffs-card__content">
+                        <h3 class="tariffs-card__title">Базовый</h3>
+                        <div class="fs-4 tariffs-card__text u-content">
+                          <p>30 запросов в сутки</p>
+                        </div>
+                      </div>
+                      <div class="tariffs-card__footer">
+                        <p class="fs-4 tariffs-card__price">390 ₽ / месяц</p>
+                        <button type="button" class="btn btn--theme-accent-outline btn--size-lg tariffs-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Подключить</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide tariffs__slider-slide">
+                  <div class="tariffs-card tariffs__slider-card">
+                    <div class="tariffs-card__media">
+                      <picture class="tariffs-card__picture">
+                        <source srcset="images/tariffs-card-2.webp" type="image/webp">
+                        <img src="images/tariffs-card-2.png" alt="Комфорт" width="626" height="492"></picture>
+                    </div>
+                    <div class="tariffs-card__inner">
+                      <div class="tariffs-card__content">
+                        <h3 class="tariffs-card__title">Комфорт</h3>
+                        <div class="fs-4 tariffs-card__text u-content">
+                          <p>70 запросов в сутки</p>
+                        </div>
+                      </div>
+                      <div class="tariffs-card__footer">
+                        <p class="fs-4 tariffs-card__price">790 ₽ / месяц</p>
+                        <button type="button" class="btn btn--theme-accent-outline btn--size-lg tariffs-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Подключить</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide tariffs__slider-slide">
+                  <div class="tariffs-card tariffs__slider-card tariffs-card--premium">
+                    <div class="tariffs-card__media">
+                      <picture class="tariffs-card__picture">
+                        <source srcset="images/tariffs-card-3.webp" type="image/webp">
+                        <img src="images/tariffs-card-3.png" alt="Премиум" width="626" height="492"></picture>
+                    </div>
+                    <div class="tariffs-card__inner">
+                      <div class="tariffs-card__content">
+                        <h3 class="tariffs-card__title">Премиум</h3>
+                        <div class="fs-4 tariffs-card__text u-content">
+                          <p>160 запросов в сутки</p>
+                        </div>
+                      </div>
+                      <div class="tariffs-card__footer">
+                        <p class="fs-4 tariffs-card__price">1690 ₽ / месяц</p>
+                        <button type="button" class="btn btn--theme-accent-outline btn--size-lg tariffs-card__btn">
+                          <span class="btn__inner">
+                            <span class="btn__title">Подключить</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-md-block js-swiper-pagination-tariffs swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq">
+          <div class="faq__container">
+            <h2 class="faq__title">Часто задаваемые вопросы</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="faq__list">
+              <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-4 faq-card__title">Что такое Нейросеть и&nbsp;как она работает?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus-type-2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text fs-5">
+                      <p>
+                        Нейросеть – это мощный инструмент на базе искусственного интеллекта, который помогает вам создавать тексты, изображения и преобразовывать аудио в текст. Она обучена на огромном количестве данных и способна генерировать высококачественные результаты за считанные секунды.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-4 faq-card__title">Можно ли настроить стиль и&nbsp;тон текста?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus-type-2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text fs-5">
+                      <p>
+                        Нейросеть – это мощный инструмент на базе искусственного интеллекта, который помогает вам создавать тексты, изображения и преобразовывать аудио в текст. Она обучена на огромном количестве данных и способна генерировать высококачественные результаты за считанные секунды.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-card__header">
+                  <button type="button" class="faq-card__btn js-faq-card-toggle">
+                    <h3 itemprop="name" class="fs-4 faq-card__title">Насколько безопасны мои данные?</h3>
+                  </button>
+                  <div class="faq-card__icon">
+                    <svg class="u-icon">
+                      <use xlink:href="images/icons/icons.svg#plus-type-2"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                  <div class="faq-card__inner">
+                    <div class="u-content faq-card__text fs-5">
+                      <p>
+                        Нейросеть – это мощный инструмент на базе искусственного интеллекта, который помогает вам создавать тексты, изображения и преобразовывать аудио в текст. Она обучена на огромном количестве данных и способна генерировать высококачественные результаты за считанные секунды.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="footer site__footer">
+        <div class="footer__container">
+          <div class="footer__row row">
+            <div class="footer__col row__col footer__col--logo">
+              <a href="/" class="logo logo--size-sm footer__logo">
+                <picture class="logo__img">
+                  <img src="images/logo-white.svg" alt="SynoWriter"></picture>
+              </a>
+            </div>
+            <div class="footer__col row__col footer__col--nav">
+              <nav class="footer__nav" role="navigation">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <p class="fs-5 footer__nav-title">Навигация</p>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Возможности</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Тарифы</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">FAQ</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__col row__col footer__col--subnav">
+              <nav class="footer__nav" role="navigation">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <p class="fs-5 footer__nav-title">Правила</p>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="privacy.html" class="footer__nav-link">Политика конфиденциальности</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="terms.html" class="footer__nav-link">Условия использования</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="offer.html" class="footer__nav-link">Договор оферты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__col row__col footer__col--action">
+              <a href="registration.html" class="btn btn--size-md btn--theme-white-fill footer__btn">
+                <span class="btn__inner">
+                  <span class="btn__title">Зарегистрироваться</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <div class="popup" data-popup="popup-form" data-close-overlay>
+      <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content popup__content--size-md popup__content--theme-black">
+          <button type="button" class="js-button-close popup__btn-close">
+            <svg class="u-icon btn-close__icon">
+              <use xlink:href="images/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.min.js??=v=20240830160438"></script>
+</body>
+</html>

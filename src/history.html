@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'SynoWriter - History'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- page-breadcrumbs BEGIN -->
+          <section class="page-breadcrumbs">
+            <div class="container container--size-sm page-breadcrumbs__container">
+              <div class="u-breadcrumbs page-breadcrumbs__list">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Показать историю</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- page-breadcrumbs END -->
+          <!-- page BEGIN -->
+          <section class="page">
+            <div class="container container--size-sm page__container">
+              <h1 class="fs-2 page__title">История за 30 дней</h1>
+              <div class="u-table page__table">
+                <table class="u-table__el">
+                  <thead>
+                    <tr>
+                      <th>
+                        <svg class="d-lg-none u-icon">
+                          <use xlink:href="images/icons/icons.svg#send"></use>
+                        </svg> Запрос
+                        <svg class="d-lg-block u-icon">
+                          <use xlink:href="images/icons/icons.svg#send"></use>
+                        </svg>
+                      </th>
+                      <th>
+                        <svg class="d-lg-none u-icon">
+                          <use xlink:href="images/icons/icons.svg#burst-mode"></use>
+                        </svg> Режим
+                        <svg class="d-lg-block u-icon">
+                          <use xlink:href="images/icons/icons.svg#burst-mode"></use>
+                        </svg>
+                      </th>
+                      <th>
+                        <svg class="d-lg-none u-icon">
+                          <use xlink:href="images/icons/icons.svg#event-note"></use>
+                        </svg> Дата
+                        <svg class="d-lg-block u-icon">
+                          <use xlink:href="images/icons/icons.svg#event-note"></use>
+                        </svg>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Запрос №1</td>
+                      <td>Генератор текста</td>
+                      <td>2 дня назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №2</td>
+                      <td>Рерайт текста</td>
+                      <td>3 дня назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №3</td>
+                      <td>Синонимайзер</td>
+                      <td>4 дня назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №4</td>
+                      <td>Синонимайзер</td>
+                      <td>5 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №5</td>
+                      <td>Сочинение</td>
+                      <td>6 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №6</td>
+                      <td>Сочинение</td>
+                      <td>7 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №7</td>
+                      <td>Чат с нейросетью</td>
+                      <td>8 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №8</td>
+                      <td>Чат с нейросетью</td>
+                      <td>9 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №9</td>
+                      <td>Дополнить текст</td>
+                      <td>10 дней назад</td>
+                    </tr>
+                    <tr>
+                      <td>Запрос №10</td>
+                      <td>Дополнить текст</td>
+                      <td>11 дней назад</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-pagination page__table-pagination">
+                <button type="button" class="btn btn--size-md btn--theme-accent-outline table-pagination__btn-clear-history">
+                  <span class="btn__inner">
+                    <span class="btn__title">Очистить историю</span>
+                  </span>
+                </button>
+                <div class="table-pagination__aside">
+                  <p class="table-pagination__aside-pages">Стр. 1 из 4</p>
+                  <div class="slider-control table-pagination__aside-control">
+                    <div class="slider-control__inner">
+                      <button type="button" class="swiper-button swiper-button-prev swiper-button--theme-white slider-control__btn">
+                        prev
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="swiper-button swiper-button-next swiper-button--theme-white slider-control__btn">
+                        next
+                        <svg class="u-icon">
+                          <use xlink:href="images/icons/icons.svg#arrow-type-2"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

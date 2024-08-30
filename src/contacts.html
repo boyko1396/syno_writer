@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'SynoWriter - Contacts'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- page-breadcrumbs BEGIN -->
+          <section class="page-breadcrumbs">
+            <div class="container container--size-sm page-breadcrumbs__container">
+              <div class="u-breadcrumbs page-breadcrumbs__list">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Контакты</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- page-breadcrumbs END -->
+          <!-- page BEGIN -->
+          <section class="page">
+            <div class="container container--size-sm page__container">
+              <h1 class="fs-2 page__title">Контакты</h1>
+              <div class="page__contacts">
+                <div class="u-content page__contacts-text">
+                  <p>Здравствуйте, уважаемые пользователи и будущие друзья!</p>
+                  <p>Мы рады представить вам SunoWriter — ваш новый надежный партнер в мире текстов и коммуникации. Служа мостом между вашими мыслями и их воплощением на "бумаге", мы стремимся сделать процесс написания и редактирования текста максимально удобным, эффективным и безграничным.</p>
+                  <p>Неважно, когда вам потребуется помощь: днем или ночью, в выходные или праздники. Наш генератор текста и уникализатор всегда здесь, готов решить ваши вопросы, проблемы и предложить качественные материалы.</p>
+                  <p>Мы верим, что остановка — это шаг назад. Именно поэтому наша команда неустанно работает над тем, чтобы сделать SunoWriter ещё лучше. Ваше мнение для нас — бесценный источник информации для улучшения сервиса. Поэтому не стесняйтесь делиться своими отзывами и предложениями.</p>
+                  <p>Технологии служат людям, а не наоборот. Нашей основной целью является улучшение качества вашей жизни через эффективное использование технологии. Мы стремимся предложить вам инструмент, который не только упростит рутинные задачи, но и даст больше времени для творчества, общения и самореализации.</p>
+                </div>
+                <h2 class="fs-3 page__contacts-form-title">Если у вас остались вопросы, вы можете оставить контакты, и мы свяжемся с вами</h2>
+                <form action="#" class="form-user page__contacts-form">
+                  <div class="form-user__row">
+                    <div class="form-user__col">
+                      <div class="u-input form-user__input">
+                        <label class="u-input__label">
+                          <input type="name" name="name" class="u-input__el u-input__el--size-md u-input__el--theme-black-outline" required placeholder="Ваше имя">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-user__col">
+                      <div class="u-input form-user__input">
+                        <label class="u-input__label">
+                          <input type="email" name="email" class="u-input__el u-input__el--size-md u-input__el--theme-black-outline" required placeholder="E-mail">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-user__col">
+                      <button type="submit" class="btn btn--size-lg btn--theme-accent-gradient form-user__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Отправить</span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

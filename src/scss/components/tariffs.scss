@@ -1,0 +1,50 @@
+.tariffs {
+  padding: calc(1.2 * var(--gap-container-y)) 0 var(--gap-container-y) 0;
+  &__container {
+    padding: 0 var(--gap-container);
+  }
+  &__header {
+    margin: 0 0 -28rem;
+    display: flex;
+    align-items: center;
+    @media (max-width: $md) {
+      justify-content: space-between;
+    }
+    &-dropdown {
+      min-width: 222rem;
+      @media (max-width: $md) {
+        min-width: 124rem;
+      }
+    }
+  }
+  &__title {
+    margin: 0 54rem 0 0;
+  }
+  &__slider {
+    &-slide {
+      @media (min-width: $md-mf) {
+        max-width: 33.33333%;
+        height: initial;
+        padding: 0 var(--gap);
+        flex: 0 0 33.33333%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+    &.swiper {
+      overflow: visible;
+    }
+    .swiper {
+      &-wrapper {
+        @media (min-width: $md-mf) {
+          width: auto;
+          margin: 0 var(--gap-);
+          display: flex;
+        }
+      }
+      &-slide {
+      }
+    }
+  }
+}

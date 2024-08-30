@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'SynoWriter - Profile paid'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- page-breadcrumbs BEGIN -->
+          <section class="page-breadcrumbs">
+            <div class="container container--size-sm page-breadcrumbs__container">
+              <div class="u-breadcrumbs page-breadcrumbs__list">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Профиль</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- page-breadcrumbs END -->
+          <!-- page BEGIN -->
+          <section class="page">
+            <div class="container container--size-sm page__container">
+              <div class="page__profile">
+                <div class="page__profile-col">
+                  <h1 class="fs-2 page__profile-title">Аккаунт</h1>
+                  <div class="page__profile-list">
+                    <div class="profile-info page__profile-list-card">
+                      <div class="profile-info__inner">
+                        <svg class="u-icon profile-info__icon">
+                          <use xlink:href="images/icons/icons.svg#mail"></use>
+                        </svg>
+                        <div class="profile-info__content">
+                          <p class="profile-info__title">Email:</p>
+                          <p class="profile-info__text">mailmail@mail.ru</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-info page__profile-list-card">
+                      <div class="profile-info__inner">
+                        <svg class="u-icon profile-info__icon">
+                          <use xlink:href="images/icons/icons.svg#event-note"></use>
+                        </svg>
+                        <div class="profile-info__content">
+                          <p class="profile-info__title">Дата регистрации:</p>
+                          <p class="profile-info__text">27.06.2024</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-info page__profile-list-card">
+                      <div class="profile-info__inner">
+                        <svg class="u-icon profile-info__icon">
+                          <use xlink:href="images/icons/icons.svg#reply-all"></use>
+                        </svg>
+                        <div class="profile-info__content">
+                          <p class="profile-info__title">Запросов на эти сутки:</p>
+                          <p class="profile-info__text">0/5</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page__profile-col">
+                  <h2 class="fs-2 page__profile-title">Подписка</h2>
+                  <div class="page__profile-list">
+                    <div class="profile-info page__profile-list-card">
+                      <div class="profile-info__inner">
+                        <svg class="u-icon profile-info__icon">
+                          <use xlink:href="images/icons/icons.svg#credit-card"></use>
+                        </svg>
+                        <div class="profile-info__content">
+                          <p class="profile-info__title">Тариф:</p>
+                          <p class="profile-info__text">Бесплатный</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="profile-info page__profile-list-card">
+                      <div class="profile-info__inner">
+                        <svg class="u-icon profile-info__icon">
+                          <use xlink:href="images/icons/icons.svg#alarm"></use>
+                        </svg>
+                        <div class="profile-info__content">
+                          <p class="profile-info__title">Тариф активен до:</p>
+                          <p class="profile-info__text">28.08.24</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn--size-semi btn--theme-accent-outline page__profile-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Сменить тариф</span>
+                    </span>
+                  </button>
+                  <button type="button" class="page__profile-btn-unsubscribe">Отменить подписку</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

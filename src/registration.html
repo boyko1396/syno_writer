@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'SynoWriter - Registration'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- page-breadcrumbs BEGIN -->
+          <section class="page-breadcrumbs">
+            <div class="container container--size-sm page-breadcrumbs__container">
+              <div class="u-breadcrumbs page-breadcrumbs__list">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="/" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Регистрация</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- page-breadcrumbs END -->
+          <!-- page BEGIN -->
+          <section class="page">
+            <div class="container container--size-sm page__container">
+              <div class="page__header">
+                <h1 class="fs-2 page__header-title">Регистрация</h1>
+                <div class="d-md-block login-louter page__header-router">
+                  <div class="login-louter__inner">
+                    <ul class="login-louter__sc">
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#vk-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#google-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="page__registration">
+                <form action="#" class="form-user page__registration-form">
+                  <div class="form-user__row">
+                    <div class="form-user__col">
+                      <div class="u-input form-user__input">
+                        <label class="u-input__label">
+                          <input type="email" name="email" class="u-input__el u-input__el--size-md u-input__el--theme-black-outline" required placeholder="E-mail">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-user__col">
+                      <div class="u-input form-user__input">
+                        <label class="u-input__label">
+                          <input type="password" name="password" class="u-input__el u-input__el--size-md u-input__el--theme-black-outline" required placeholder="Пароль">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-user__col">
+                      <button type="submit" class="btn btn--size-lg btn--theme-accent-gradient form-user__btn">
+                        <span class="btn__inner">
+                          <span class="btn__title">Зарегистрироваться</span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div class="login-louter page__registration-router">
+                  <div class="login-louter__inner">
+                    <p class="login-louter__text">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                    <ul class="d-md-none login-louter__sc">
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#vk-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="login-louter__sc-item">
+                        <button type="button" class="login-louter__sc-btn">
+                          <svg class="u-icon">
+                            <use xlink:href="images/icons/icons.svg#google-color"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>
