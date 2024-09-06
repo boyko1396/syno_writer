@@ -385,7 +385,7 @@
     }
   }
   &__dropdown {
-    width: 100%;
+    min-width: 100%;
     padding: calc(var(--u-dropdown-height) - 10rem) 0 20rem;
     position: absolute;
     top: 0;
@@ -552,14 +552,14 @@
     @media (max-width: $lg) {
       background: rgba($whiteColor, .5);
       backdrop-filter: $bgBlur1;
-      margin-bottom: 12vw;
+      margin-bottom: 120rem;
       padding: 40rem 35rem;
       flex-wrap: wrap;
       box-shadow: 0 5px 30px rgba($blackColor, .03);
       border-radius: $radiusMd;
     }
     @media (max-width: $xs) {
-      margin-bottom: 20vw;
+      margin-bottom: 100rem;
     }
   }
   &__content {
@@ -624,12 +624,15 @@
     margin: -77rem 0;
     flex: 0 0 35%;
     @media (max-width: $lg) {
-      max-width: 100%;
-      margin: -6vw 0 -36vw;
+      width: 100%;
+      height: 712rem;
+      max-width: unset;
+      margin: 20rem auto -574rem;
       flex: 0 0 100%;
     }
     @media (max-width: $xs) {
-      margin-bottom: -57vw;
+      margin-top: -10rem;
+      margin-bottom: -550rem;
     }
   }
   &__picture {
@@ -639,9 +642,9 @@
     pointer-events: none;
     user-select: none;
     z-index: 0;
-    @media (max-width: $xs) {
-      width: 200%;
-      margin-left: -60%;
+    @media (max-width: $lg) {
+      display: flex;
+      justify-content: center;
     }
     img {
       width: 300%;
@@ -653,7 +656,8 @@
       left: 50%;
       transform: translateX(-50%);
       @media (max-width: $lg) {
-        width: 100%;
+        width: auto;
+        height: 100%;
         margin: 0;
         position: static;
         transform: none;
